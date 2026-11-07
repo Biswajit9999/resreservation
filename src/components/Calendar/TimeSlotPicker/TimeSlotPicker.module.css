@@ -1,0 +1,43 @@
+.group {
+  margin-top: 16px;
+}
+
+.heading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.slot {
+  height: 40px;
+  border: 1px solid #2aa7ff;
+  border-radius: 4px;
+  background: #fff;
+  color: #2aa7ff;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.slot:hover {
+  background: #e8f4ff;
+}
+
+.active,
+.active:hover {
+  background: #2aa7ff;
+  color: #fff;
+}
+
+@media (min-width: 600px) {
+  .slots {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

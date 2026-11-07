@@ -1,0 +1,35 @@
+.slider {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 16px 24px;
+  --swiper-pagination-color: #2aa7ff;
+  --swiper-pagination-bullet-inactive-color: #9ac8ee;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.slider :global(.swiper) {
+  padding-bottom: 36px;
+}
+
+.slide {
+  transform: scale(0.88);
+  transition: transform 0.35s ease;
+}
+
+/* the zoomed one */
+.slide:global(.swiper-slide-active) {
+  transform: scale(1);
+}
+
+.img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    padding-top: 48px;
+  }
+}

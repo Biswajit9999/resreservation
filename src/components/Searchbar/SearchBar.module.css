@@ -1,0 +1,31 @@
+/* Mobile first: stacked */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  width: 100%;
+}
+
+.placeholder {
+  color: #9aa8c2;
+}
+
+@media (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .field {
+    flex: 1;
+  }
+
+  .form button {
+    width: 150px;
+    flex-shrink: 0;
+  }
+}

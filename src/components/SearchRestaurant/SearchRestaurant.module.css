@@ -1,0 +1,86 @@
+/* ---------- Mobile first (base) ---------- */
+.section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f2d4d;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #5b6b8c;
+}
+
+.check {
+  font-size: 18px !important;
+}
+
+.layout {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.poster {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 48px 0;
+  font-size: 13px;
+  color: #5b6b8c;
+  text-align: center;
+}
+
+.info {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #5b6b8c;
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .section {
+    padding: 48px 16px 64px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .sub {
+    font-size: 14px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr 360px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .poster {
+    margin: 0;
+  }
+}

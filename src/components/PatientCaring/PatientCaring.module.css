@@ -1,0 +1,102 @@
+/* ---------- Mobile first (base) ---------- */
+.section {
+  background: #e8f2ff;
+  padding: 32px 16px;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2aa7ff;
+}
+
+.title {
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.title span {
+  color: #2aa7ff;
+}
+
+.desc {
+  margin-top: 8px;
+  max-width: 420px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #5b6b8c;
+}
+
+.list {
+  margin-top: 16px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1b3c74;
+}
+
+.tick {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) {
+  .section {
+    padding: 48px 16px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .logo {
+    width: 260px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .section {
+    padding: 64px 16px;
+  }
+
+  .logo {
+    width: 340px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+}

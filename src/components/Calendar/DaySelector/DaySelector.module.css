@@ -1,0 +1,44 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+  background: #f4f8ff;
+  border-radius: 6px;
+}
+
+.arrow {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #2aa7ff;
+  cursor: pointer;
+}
+
+.arrow:disabled {
+  color: #c4cddd;
+  cursor: not-allowed;
+}
+
+.day {
+  flex: 1;
+  text-align: center;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.date {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #5b6b8c;
+}

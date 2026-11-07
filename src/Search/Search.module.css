@@ -1,0 +1,37 @@
+.page {
+  background: #f4f8ff;
+}
+
+/* blue strip behind the top half of the search card */
+.top {
+  position: relative;
+  padding: 24px 16px 0;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 45% 0;
+  background: linear-gradient(90deg, #2aa7ff, #0a86e0);
+  border-radius: 0 0 20px 20px;
+}
+
+.card {
+  position: relative; /* sits above the blue strip */
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(27, 60, 116, 0.12);
+}
+
+@media (min-width: 768px) {
+  .top {
+    padding-top: 40px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}

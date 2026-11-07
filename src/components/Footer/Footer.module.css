@@ -1,0 +1,241 @@
+/* ---------- Download section (mobile first) ---------- */
+.download {
+  background: #e8f2ff;
+  padding: 32px 16px 0;
+}
+
+.downloadInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+  align-items: end;
+}
+
+.phoneImg {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.dlText {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.dlTitle {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #1b3c74;
+}
+
+.dlTitle span {
+  display: block;
+  color: #2aa7ff;
+}
+.arrow {
+  display: none; /* hidden on mobile */
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 90px;
+  width: auto;
+}
+
+.dlLabel {
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1f2d4d;
+}
+
+.smsForm {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.phoneField {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.prefix {
+  color: #1f2d4d;
+}
+
+.phoneInput {
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+}
+
+.smsBtn {
+  height: 44px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  background: #2aa7ff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.storeBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: #2b2b2b;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.storeBtn img {
+  height: 18px;
+  width: auto;
+}
+
+/* ---------- Footer (mobile first) ---------- */
+.footer {
+  background: #2aa7ff;
+  color: #fff;
+  padding: 32px 16px 16px;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logo {
+  width: 90px;
+  margin-left: -8px; /* the image has built-in white space around it */
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #2aa7ff;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px 24px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  min-height: 36px; /* comfortable tap target */
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.chevron {
+  font-size: 16px !important;
+  margin-right: 4px;
+}
+
+.copy {
+  max-width: 1120px;
+  margin: 24px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 600px) {
+  .columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .downloadInner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .phoneImg {
+    width: 260px;
+  }
+
+  .dlTitle {
+    font-size: 40px;
+  }
+
+  .footer {
+    padding: 48px 16px 24px;
+  }
+
+  .dlText {
+  padding-left: 56px; /* makes room for the arrow */
+}
+
+.arrow {
+  display: block;
+}
+
+  .inner {
+    grid-template-columns: 1fr 2fr; /* brand left, links right */
+  }
+
+  .logo {
+    width: 100px;
+  }
+}

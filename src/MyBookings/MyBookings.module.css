@@ -1,0 +1,150 @@
+/* ---------- Mobile first (base) ---------- */
+.page {
+  background: #f4f8ff;
+}
+
+/* blue band: title + search card */
+.top {
+  background: linear-gradient(90deg, #2aa7ff, #0a86e0);
+  border-radius: 0 0 20px 20px;
+  padding: 20px 16px 24px;
+}
+
+.topInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.searchCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.input {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #eef1f7;
+  border-radius: 4px;
+  background: #f7f8fc;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #2aa7ff;
+}
+
+.searchBtn {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  border-radius: 4px;
+  background: #2aa7ff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  background: #1e96ea;
+}
+
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.layout {
+  display: grid;
+  gap: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.poster {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.empty {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #5b6b8c;
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) {
+  .top {
+    padding: 28px 16px 32px;
+  }
+
+  .topInner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .searchCard {
+    flex: 1;
+    max-width: 760px;
+    flex-direction: row;
+    padding: 24px;
+  }
+
+  .input {
+    flex: 1;
+  }
+
+  .searchBtn {
+    width: 150px;
+    flex-shrink: 0;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .content {
+    padding: 48px 16px 64px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr 360px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .poster {
+    margin: 0;
+  }
+}

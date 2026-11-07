@@ -1,0 +1,138 @@
+/* ---------- Mobile first (base) ---------- */
+.top {
+  background: #e8f2ff;
+  padding: 24px 16px 0;
+}
+
+.top > * {
+  max-width: 1120px;
+}
+
+.text {
+  max-width: 1120px;
+  margin: 0 auto 16px;
+}
+
+.kicker {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b3c74;
+}
+
+.title {
+  margin-top: 4px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.title span {
+  color: #2aa7ff;
+}
+
+.desc {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #3d4b69;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px 14px;
+  background: #2aa7ff;
+  color: #fff;
+  font-size: 11px;
+  text-decoration: underline;
+  border-radius: 4px;
+}
+
+/* the circle is cropped so it sits flush on the search card */
+.imageWrap {
+  height: 170px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.chef {
+  width: 200px;
+  height: auto;
+  align-self: flex-start;
+}
+
+/* light blue ends partway down the card, white below */
+.cardWrap {
+  padding: 0 16px;
+  background: linear-gradient(to bottom, #e8f2ff 60px, #fff 60px);
+}
+
+.card {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(27, 60, 116, 0.12);
+}
+
+/* ---------- Tablet ---------- */
+@media (min-width: 768px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 16px 0;
+    background: transparent;
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  .imageWrap {
+    justify-content: flex-end;
+    height: 210px;
+  }
+
+  .chef {
+    width: 250px;
+  }
+
+  .hero {
+    background: #e8f2ff;
+  }
+
+  .cardWrap {
+    background: linear-gradient(to bottom, #e8f2ff 90px, #fff 90px);
+  }
+
+  .card {
+    padding: 28px 32px;
+  }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 1024px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .imageWrap {
+    height: 250px;
+  }
+
+  .chef {
+    width: 300px;
+  }
+
+  .cardWrap {
+    background: linear-gradient(to bottom, #e8f2ff 125px, #fff 125px);
+  }
+}

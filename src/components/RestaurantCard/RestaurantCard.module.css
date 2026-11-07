@@ -1,0 +1,157 @@
+/* ---------- Mobile first (base) ---------- */
+.card {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px 14px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 64px;
+  height: auto;
+  align-self: start;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2aa7ff;
+}
+
+.place {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1f2d4d;
+}
+
+.address {
+  font-size: 12px;
+  color: #1f2d4d;
+}
+
+.fee {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #1f2d4d;
+}
+
+.fee strong {
+  color: #0a9b0a;
+}
+
+.fee s {
+  color: #8a94a8;
+}
+
+.divider {
+  margin: 12px 0;
+  border-top: 1px dashed #d5dbe7;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: #0a9b0a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.thumb {
+  font-size: 14px !important;
+}
+
+/* button area drops below on mobile */
+.action {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.avail {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0a9b0a;
+}
+
+.bookBtn {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background: #2aa7ff;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.bookBtn:hover {
+  background: #1e96ea;
+}
+
+.chips {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeChip,
+.dateChip {
+  padding: 4px 10px;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.timeChip {
+  border: 1px solid #2aa7ff;
+  color: #2aa7ff;
+}
+
+.dateChip {
+  border: 1px solid #0a9b0a;
+  color: #0a9b0a;
+}
+
+/* ---------- Tablet / Desktop ---------- */
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: 120px 1fr 240px;
+    padding: 24px 32px;
+    gap: 0 24px;
+    align-items: stretch;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .action {
+    grid-column: auto;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .chips {
+  grid-column: auto;
+  align-self: start;
+  justify-content: flex-end;
+}
+
+  .avail {
+    text-align: center;
+  }
+}
